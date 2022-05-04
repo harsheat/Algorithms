@@ -10,8 +10,8 @@ vector<int> compute_lps(string pattern)
     {
         if(pattern[i]==pattern[index])
         {
-            index++;
             lps[i]=lps[index]+1;
+            index++;
             i++;
         }
         else{
